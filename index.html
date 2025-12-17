@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnaments Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🏆 Turnaments Pro</h1>
+        <p class="tagline">Register and Win Big!</p>
+
+        <div id="registration-form">
+            <input type="text" id="playerName" placeholder="Apna Pura Naam" required>
+            <input type="text" id="gameId" placeholder="PUBG/FF In-Game ID" required>
+            <input type="number" id="whatsapp" placeholder="WhatsApp No. (For Room ID)" required>
+            
+            <div class="disclaimer">
+                <input type="checkbox" id="agree">
+                <label for="agree">Main maanta hoon ki game mein hone wali kisi bhi dikkat, account ban ya hani ke liye main khud zimmedar hoon.</label>
+            </div>
+
+            <button onclick="registerPlayer()">Register Now (Pay Entry Fee)</button>
+        </div>
+
+        <div id="room-details" style="display:none;">
+            <h3>🎮 Match Room Details</h3>
+            <p>ID: <span id="displayRoomId">Verification Pending...</span></p>
+            <p>Pass: <span id="displayPass">Wait for Admin</span></p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turnaments Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-box">
+        <h1>🏆 Turnaments Pro</h1>
+        
+        <div id="regForm">
+            <input type="text" id="pName" placeholder="Apna Naam">
+            <input type="text" id="pID" placeholder="Game In-Game ID">
+            <input type="number" id="pPhone" placeholder="WhatsApp Number">
+            
+            <div class="rules-box">
+                <p><strong>⚠️ Disclaimer:</strong> Is tournament mein khelne ki puri zimmedari khiladi ki hogi. Kisi bhi hani ya account ban ke liye platform zimmedar nahi hai.</p>
+                <input type="checkbox" id="agree"> <label>Main maanta hoon.</label>
+            </div>
+
+            <button onclick="register()">Register & Get Room ID</button>
+        </div>
+
+        <div id="roomSection" style="display:none;">
+            <h3>✅ Registration Done!</h3>
+            <p>Admin verification ke baad Room ID yahan dikhegi:</p>
+            <div class="room-card">
+                <p>Room ID: <span id="rID">Wait...</span></p>
+                <p>Password: <span id="rPass">Wait...</span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
