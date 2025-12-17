@@ -1,0 +1,12 @@
+body { font-family: Arial, sans-serif; background-color: #1a1a1a; color: white; text-align: center; padding: 20px; }
+.container { background: #2d2d2d; padding: 20px; border-radius: 15px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+input { width: 90%; padding: 12px; margin: 10px 0; border-radius: 5px; border: none; }
+button { background: #ff4b2b; color: white; border: none; padding: 15px 30px; border-radius: 5px; cursor: pointer; font-weight: bold; width: 100%; }
+.disclaimer { font-size: 12px; color: #bbb; margin: 15px 0; text-align: left; }
+#room-details { margin-top: 20px; border-top: 1px solid #444; padding-top: 10px; color: #00ff00; }
+body { background: #0f0f0f; color: white; font-family: sans-serif; text-align: center; padding: 20px; }
+.main-box { background: #1e1e1e; padding: 20px; border-radius: 15px; border: 1px solid #333; }
+input { width: 90%; padding: 12px; margin: 10px 0; border-radius: 8px; border: none; }
+button { background: #e63946; color: white; padding: 15px; width: 95%; border: none; border-radius: 8px; font-weight: bold; margin-top: 10px; }
+.rules-box { font-size: 11px; color: #aaa; text-align: left; margin: 10px; border: 1px solid #444; padding: 10px; }
+.room-card { background: #2a9d8f; padding: 10px; border-radius: 10px; font-size: 20px; font-weight: bold; }
